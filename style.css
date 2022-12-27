@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Cinzel&family=Concert+One&family=Fjalla+One&family=IM+Fell+English+SC&family=Indie+Flower&family=Orbitron:wght@700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Cinzel&family=Concert+One&family=Fjalla+One&family=IM+Fell+English+SC&family=Indie+Flower&family=Orbitron:wght@700&family=Roboto:wght@100&family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    min-height: 100vh;
+    font-size: 10px;
+    background: linear-gradient(to top right, #e1e6e3,#97e7ea);
+    background-image: url("images/silivan-munguarakarama-NrR9gn3lFKU-unsplash.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.container{
+    min-height: 64vh;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+   
+}
+.keys{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    border: 1vmin solid rgb(213, 198, 198);
+    padding: 7vmin 2.3vmin;
+    border-radius: 1vmin;
+    background-image: url("images/diane-picchiottino-CCTFUpja7mo-unsplash.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 29px 12px rgb(12, 2, 2);
+    
+}
+#a,#s,#d,#f,#j,#k,#l{
+    width: 10rem;
+    height: 10rem;
+    border: 0.8rem solid rgb(241, 144, 144);
+    border-radius: 1rem;
+    font-size: 6rem;
+    font-weight: 800;
+    font-family: 'IM Fell English SC',sans-serif;
+    color: rgb(2, 167, 250);
+    display: flex;
+    align-items:center;
+    justify-content: center;  
+    cursor: pointer;   
+}
+#a,#f,#l{
+    background-image: url("images/pawel-czerwinski-2dyR13FNg2I-unsplash.jpg");   
+    background-repeat: no-repeat;
+    background-size: cover;   
+    
+}
+#s,#j{
+    background-image: url("images/jr-korpa-stwHyPWNtbI-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;        
+}
+#d,#k{
+    background-image: url("images/jr-korpa-9XngoIpxcEo-unsplash.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;       
+}
+
+.playing{
+    border-radius: 2vmin;
+    background-color: #16cbcb;
+    transform: scale(1.2);
+    box-shadow: 0 0 1rem gold ;
+}
+
+.box2{
+    border: 0.5rem solid rgb(167, 212, 17);
+    margin-bottom: 9rem;
+    padding-left: 6.5rem;
+    padding-right:6.5rem;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+    border-radius: 1.5rem;
+    background-color:white;
+
+}
+.about{
+    text-align: center;
+    color: rgb(23, 240, 204);
+    font-family:'Special Elite';
+    font-size: 3.4vmin;
+    padding-top: 6vmin;
+}
+.name{
+    text-align: center;
+    color: rgb(188, 190, 50);
+    font-family:'Special Elite';
+    font-size:9vmin;
+    padding-top: 10vmin;
+}
+.intro{
+    text-align:right;
+    color: rgb(23, 240, 204);
+    font-family:'Special Elite';  
+    padding-top: 1vmin; 
+   
+}
+a:link {
+    text-decoration: none;
+    padding-right: 6vmin;
+}
+a:hover{
+    color: rgb(160, 205, 57);
+}
+
+
+
+
+/* Making Site Resposive  */
+
+
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+        min-height: 100vh;
+    }
+    .container{
+        min-height: 55vh;
+    } 
+    
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+        min-height: 100vh;
+    }
+    .container{
+        min-height: 55vh;
+    } 
+    .intro{
+        padding-top: 20vmin;
+        padding-bottom: 15vmin;
+    }
+}
+@media(max-width:646px){
+    html{
+        font-size: 35%;
+        min-height: 100vh;
+    }
+}
+@media(max-width:490px){
+    html{
+        font-size: 25%;
+        min-height: 100vh;
+    }
+}
+@media(max-width:380px){
+    html{
+        font-size: 15%;
+        min-height: 100vh;
+    }
+}
+
+ 

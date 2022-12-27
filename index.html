@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Drum kit</title>
+</head>
+
+<body>
+   <div class="container">
+       <div class="keys">
+            <div data-key="65" class="tune"><a1 id="a">A</a1></div>
+            <div data-key="83" class="tune"><a1 id="s">S</a1></div>
+            <div data-key="68" class="tune"><a1 id="d">D</a1></div>
+            <div data-key="70" class="tune"><a1 id="f">F</a1></div>
+            <div data-key="74" class="tune"><a1 id="j">J</a1></div>
+            <div data-key="75" class="tune"><a1 id="k">K</a1></div>
+            <div data-key="76" class="tune"><a1 id="l">L</a1></div>
+       </div>
+   <audio data-key="65" src="sound/tom.mp3"></audio>
+   <audio data-key="83" src="sound/clap.mp3"></audio>
+   <audio data-key="68" src="sound/hihat.mp3"></audio>
+   <audio data-key="70" src="sound/kick.mp3"></audio>
+   <audio data-key="74" src="sound/openhat.mp3"></audio>
+   <audio data-key="75" src="sound/ride.mp3"></audio>
+   <audio data-key="76" src="sound/snare.mp3"></audio>
+   
+</div>
+<div>
+    <h1 class="about">Press Given Keys For Playing...</h1>
+</div>
+
+</div>
+<div>
+    <h1 class="name">DRUM KIT</h1>
+</div>
+
+<div class="intro">
+    <div class="developer">
+        <h1>Developer : <a href="https://www.linkedin.com/in/vishal-kumar-singh-b69587224/">VISHAL</a></h1>
+</div>
+</div>
+
+   <script>
+
+       //keydown event
+
+       window.addEventListener('keydown',(e)=>{
+        let audio = document.querySelector(`audio[data-key='${e.keyCode}']`);
+        let key = document.querySelector(`.tune[data-key='${e.keyCode}']`);
+        if(!audio)return;
+        audio.currentTime = 0;
+        audio.play();
+        key.classList.add('playing');
+
+        setTimeout(()=> {
+            key.classList.remove('playing');
+        } ,80);
+       })
+   </script>
+</body>
+</html>
